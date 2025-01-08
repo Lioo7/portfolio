@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lioz Akirav - Software Engineer specializing in full-stack development, cybersecurity, and test-driven development. View my portfolio and projects.">
+    <meta name="author" content="Lioz Akirav">
+    <meta name="keywords" content="software engineer, web developer, full stack developer, javascript, python, react">
+    
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://formspree.io https://analytics.umami.is; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' https://analytics.umami.is 'unsafe-inline';">
+    
+    <title>Lioz Akirav | Software Engineer</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./src/css/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="icon" href="public/assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="hero">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">LA</a>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Lioz Akirav</h1>
+            <p class="hero-subtitle">Software Engineer</p>
+            <p class="hero-tagline">Building scalable solutions and solving complex technical challenges</p>
+            <div class="hero-cta">
+                <a href="#projects" class="button button-primary">View My Projects</a>
+                <a href="#contact" class="button button-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="about" class="section">
+            <div class="container">
+              <h2 class="section-title">About Me</h2>
+              
+              <div class="about-content">
+                <div class="profile-image-container">
+                  <img 
+                    src="public/images/profile.png" 
+                    alt="Lioz Akirav" 
+                    class="profile-image"
+                    width="240"
+                    height="240"
+                  />
+                </div>
+                
+                <div class="about-text">
+                  <p class="about-description">
+                    I'm a Software Engineer passionate about creating efficient, scalable solutions. 
+                    With a strong foundation in full-stack development and cybersecurity, I focus on 
+                    writing clean, maintainable code and implementing robust security measures.
+                  </p>
+                  
+                  <div class="skills">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                      <div class="skill-category">
+                        <h4>Languages</h4>
+                        <ul class="skill-list">
+                          <li>Python</li>
+                          <li>JavaScript</li>
+                          <li>TypeScript</li>
+                          <li>Java</li>
+                        </ul>
+                      </div>
+                      <div class="skill-category">
+                        <h4>Frameworks</h4>
+                        <ul class="skill-list">
+                          <li>React</li>
+                          <li>Flask</li>
+                          <li>FastAPI</li>
+                          <li>Django</li>
+                        </ul>
+                      </div>
+                      <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <ul class="skill-list">
+                          <li>Git</li>
+                          <li>Docker</li>
+                          <li>AWS</li>
+                          <li>PostgreSQL</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-meta">Ariel University | 2024-Present</p>
+                            <ul class="timeline-details">
+                                <li>Architected and implemented a full-stack data collection platform serving 1000+ users</li>
+                                <li>Developed data analysis pipelines using Python ecosystem</li>
+                                <li>Designed robust RESTful APIs with comprehensive test coverage</li>
+                                <li>Enhanced system functionality for algorithmic budget allocation</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Research Analyst</h3>
+                            <p class="timeline-meta">Mend | 2022-2023</p>
+                            <ul class="timeline-details">
+                                <li>Led data analysis efforts utilizing both relational and non-relational databases</li>
+                                <li>Developed Python scripts to automate data processing and analysis</li>
+                                <li>Designed and implemented testing suites using Python/Pytest</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Malware-Detection</h3>
+                            <p class="project-description">
+                                Implemented Genetic Algorithms for polymorphic malware detection using 
+                                dependency graph analysis and heuristic techniques.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/malware-detection" 
+                                   class="button button-outline"
+                                   target="_blank" 
+                                   rel="noopener">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">amalfi-artifact</h3>
+                            <p class="project-description">
+                                Developed automated detection system for malicious npm packages based on 
+                                published research, using custom dataset and machine learning.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">ML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/amalfi-artifact" 
+                                   class="button button-outline"
+                                   target="_blank" 
+                                   rel="noopener">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>
+                            I'm currently open to new opportunities and would love to hear from you. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        <div class="social-links">
+                            <a href="https://github.com/Lioo7" 
+                               target="_blank" 
+                               rel="noopener" 
+                               class="social-link"
+                               aria-label="GitHub Profile">
+                                <img src="public/images/github.png" alt="" width="24" height="24">
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/lioz-akirav" 
+                               target="_blank" 
+                               rel="noopener"
+                               class="social-link"
+                               aria-label="LinkedIn Profile">
+                                <img src="public/images/linkedin.png" alt="" width="24" height="24">
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <form id="contact-form" 
+                          class="contact-form" 
+                          action="https://formspree.io/f/mdkkppjw" 
+                          method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="name" 
+                                   required 
+                                   placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   required 
+                                   placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      required 
+                                      placeholder="Your message..."></textarea>
+                        </div>
+
+                        <input type="text" name="_gotcha" style="display: none">
+                        <div id="form-status" class="form-status" aria-live="polite"></div>
+
+                        <button type="submit" class="button button-primary">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-loader"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2025 Lioz Akirav. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/form.js" defer></script>
+    <script async 
+            defer 
+            data-website-id="your-umami-id" 
+            src="https://analytics.umami.is/script.js"></script>
+</body>
+</html>
