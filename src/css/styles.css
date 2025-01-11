@@ -132,7 +132,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  min-height: calc(100vh - 4rem);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +244,7 @@ a:hover {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   text-align: left;
 }
@@ -348,10 +348,16 @@ a:hover {
   background: var(--color-bg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  padding: var(--space-2xl);
 }
 
 .contact-form {
   padding: var(--space-xl);
+}
+
+.contact-form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -428,14 +434,14 @@ textarea {
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 .social-links {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
+  justify-content: center;
+  margin: var(--space-xl) 0;
 }
 
 .social-link {
@@ -486,6 +492,10 @@ textarea {
   .section-title {
     font-size: 2rem;
     margin-bottom: var(--space-2xl);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
   
   .about-text {
