@@ -15,7 +15,6 @@
     <!-- Preload critical assets -->
     <link rel="preload" href="./src/css/styles.css" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
-    <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="icon" href="public/assets/favicon.ico" type="image/x-icon">
     
@@ -48,7 +47,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Lioz Akirav</h1>
             <p class="hero-subtitle">Software Engineer</p>
-            <p class="hero-tagline">Building scalable solutions and solving complex technical challenges</p>
+            <p class="hero-tagline">Software Engineer passionate about full-stack development, data analysis, and cybersecurity</p>
             <div class="hero-cta">
                 <a href="#projects" class="button button-primary">View My Projects</a>
                 <a href="#contact" class="button button-secondary">Get in Touch</a>
@@ -74,40 +73,61 @@
                 
                 <div class="about-text">
                   <p class="about-description">
-                    I'm a Software Engineer passionate about creating efficient, scalable solutions. 
-                    With a strong foundation in full-stack development and cybersecurity, I focus on 
-                    writing clean, maintainable code and implementing robust security measures.
+                    I'm a Software Engineer focused on building efficient and secure web applications. 
+                    Currently working on data collection and analysis platforms at Ariel University, with experience in managing large-scale databases and implementing automated testing pipelines. 
+                    I'm particularly interested in the intersection of data analysis and cybersecurity, having previously worked with the world's largest open-source vulnerabilities database at Mend.
                   </p>
                   
                   <div class="skills">
-                    <h3 class="skills-title">Technical Skills</h3>
-                    <div class="skills-grid">
-                      <div class="skill-category">
-                        <h4>Languages</h4>
-                        <ul class="skill-list">
-                          <li>Python</li>
-                          <li>JavaScript</li>
-                          <li>TypeScript</li>
-                          <li>Java</li>
-                        </ul>
-                      </div>
-                      <div class="skill-category">
-                        <h4>Frameworks</h4>
-                        <ul class="skill-list">
-                          <li>React</li>
-                          <li>Flask</li>
-                          <li>FastAPI</li>
-                          <li>Django</li>
-                        </ul>
-                      </div>
-                      <div class="skill-category">
-                        <h4>Tools & Technologies</h4>
-                        <ul class="skill-list">
-                          <li>Git</li>
-                          <li>Docker</li>
-                          <li>AWS</li>
-                          <li>PostgreSQL</li>
-                        </ul>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-container">
+                      <div class="skills-grid">
+                        <div class="skill-category">
+                          <h4>Languages</h4>
+                          <ul class="skill-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                          </ul>
+                        </div>
+                  
+                        <div class="skill-category">
+                          <h4>Frameworks</h4>
+                          <ul class="skill-list">
+                            <li>React</li>
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                            <li>Django</li>
+                            <li>Express.js</li>
+                            <li>pytest</li>
+                          </ul>
+                        </div>
+                  
+                        <div class="skill-category">
+                          <h4>Tools</h4>
+                          <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>AWS</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Redis</li>
+                          </ul>
+                        </div>
+                  
+                        <div class="skill-category">
+                          <h4>Focus Areas</h4>
+                          <ul class="skill-list">
+                            <li>Data Analysis & Visualization</li>
+                            <li>Cybersecurity</li>
+                            <li>Database Design</li>
+                            <li>Test Automation</li>
+                            <li>CI/CD Pipeline</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -116,7 +136,7 @@
             </div>
           </section>
 
-        <section id="experience" class="section section-alt">
+          <section id="experience" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
                 <div class="timeline">
@@ -127,9 +147,9 @@
                             <p class="timeline-meta">Ariel University | 2024-Present</p>
                             <ul class="timeline-details">
                                 <li>Architected and implemented a full-stack data collection platform serving 1000+ users</li>
-                                <li>Developed data analysis pipelines using Python ecosystem</li>
-                                <li>Designed robust RESTful APIs with comprehensive test coverage</li>
-                                <li>Enhanced system functionality for algorithmic budget allocation</li>
+                                <li>Developed data analysis pipelines using Python ecosystem (pandas, numpy, matplotlib) for automated report generation and visualizations</li>
+                                <li>Designed robust RESTful APIs with comprehensive test coverage, including unit, integration, and load testing using pytest and Locust</li>
+                                <li>Built a scalable MySQL database system with multilingual support for budget allocation surveys</li>
                             </ul>
                         </div>
                     </article>
@@ -140,9 +160,10 @@
                             <h3>Research Analyst</h3>
                             <p class="timeline-meta">Mend | 2022-2023</p>
                             <ul class="timeline-details">
-                                <li>Led data analysis efforts utilizing both relational and non-relational databases</li>
-                                <li>Developed Python scripts to automate data processing and analysis</li>
-                                <li>Designed and implemented testing suites using Python/Pytest</li>
+                                <li>Led data analysis initiatives utilizing MySQL and MongoDB for the world's largest open source vulnerabilities database</li>
+                                <li>Developed Python automation scripts that significantly reduced manual data processing time</li>
+                                <li>Designed and implemented comprehensive testing suites using Python/Pytest, improving product reliability</li>
+                                <li>Collaborated in an Agile environment to deliver research outcomes and improve product performance</li>
                             </ul>
                         </div>
                     </article>
@@ -154,20 +175,28 @@
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
+                    <!-- Budget Survey Project -->
                     <article class="project-card">
                         <div class="project-content">
-                            <h3 class="project-title">Malware-Detection</h3>
+                            <h3 class="project-title">Budget Survey System</h3>
                             <p class="project-description">
-                                Implemented Genetic Algorithms for polymorphic malware detection using 
-                                dependency graph analysis and heuristic techniques.
+                                Architected and implemented a full-stack data collection platform serving 1000+ users. 
+                                The system features automated data analysis pipelines, comprehensive test coverage, 
+                                and multilingual support.
                             </p>
+                            <ul class="project-achievements">
+                                <li>Built scalable MySQL database with multilingual capabilities</li>
+                                <li>Implemented automated report generation and data visualization</li>
+                                <li>Achieved robust test coverage with pytest and Locust</li>
+                            </ul>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">pytest</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/malware-detection" 
+                                <a href="https://github.com/ariel-research/budget-survey" 
                                    class="button button-outline"
                                    target="_blank" 
                                    rel="noopener">
@@ -176,21 +205,55 @@
                             </div>
                         </div>
                     </article>
-                    
+        
+                    <!-- Equal Shares Project -->
                     <article class="project-card">
                         <div class="project-content">
-                            <h3 class="project-title">amalfi-artifact</h3>
+                            <h3 class="project-title">Equal Shares Voting System</h3>
                             <p class="project-description">
-                                Developed automated detection system for malicious npm packages based on 
-                                published research, using custom dataset and machine learning.
+                                Developed a production voting system with FastAPI and React, implementing 
+                                complex allocation algorithms for fair resource distribution. Features comprehensive 
+                                testing and modern development practices.
                             </p>
+                            <ul class="project-achievements">
+                                <li>Built RESTful API with FastAPI for algorithmic budget allocation</li>
+                                <li>Implemented secure authentication and user management</li>
+                                <li>Deployed using Docker with complete CI/CD pipeline</li>
+                            </ul>
                             <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/amalfi-artifact" 
+                                <a href="https://github.com/Lioo7/equal-shares" 
+                                   class="button button-outline"
+                                   target="_blank" 
+                                   rel="noopener">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Malware Detection -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Malware Detection System</h3>
+                            <p class="project-description">
+                                Implemented innovative genetic algorithms for polymorphic malware detection based on 
+                                dependency graph analysis and maximum subgraph isomorphism, following research by 
+                                Kim and Moon.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Graph Analysis</span>
+                                <span class="tech-tag">Research</span>
+                                <span class="tech-tag">Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lioo7/Malware-Detection" 
                                    class="button button-outline"
                                    target="_blank" 
                                    rel="noopener">
