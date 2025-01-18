@@ -8,8 +8,17 @@
     <meta name="keywords" content="software engineer, web developer, full stack developer, javascript, python, react">
     
     <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://formspree.io https://analytics.umami.is; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' https://analytics.umami.is 'unsafe-inline';">
-    
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://analytics.umami.is;
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self' https://formspree.io;
+    frame-ancestors 'none';
+    form-action 'self' https://formspree.io;
+    ">
+        
     <title>Lioz Akirav | Software Engineer</title>
     
     <!-- Preload critical assets -->
