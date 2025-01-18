@@ -1,16 +1,16 @@
 /* Variables */
 :root {
   /* Colors */
-  --color-primary: #4f46e5;
-  --color-primary-dark: #4338ca;
-  --color-primary-light: #6366f1;
-  --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc;
-  --color-text: #1e293b;
-  --color-text-light: #64748b;
-  --color-border: #e2e8f0;
-  --color-accent: #e0e7ff;
-  
+  --color-primary: #4f46e5;      /* Purple - used for buttons, links, accents */
+  --color-primary-dark: #4338ca; /* Darker purple - used for hover states */
+  --color-primary-light: #6366f1; /* Lighter purple - used for timeline, tags */
+  --color-bg: #ffffff;           /* White - main background */
+  --color-bg-alt: #f8fafc;       /* Light gray - alternative background */
+  --color-text: #1e293b;         /* Dark blue-gray - main text */
+  --color-text-light: #4B5563;   /* Medium gray - secondary text */
+  --color-border: #e2e8f0;       /* Light gray - borders */
+  --color-accent: #e0e7ff;       /* Very light purple - used for tags, hero gradient */
+
   /* Spacing */
   --space-xs: 0.25rem;  /* 4px */
   --space-sm: 0.5rem;   /* 8px */
@@ -288,6 +288,7 @@ a:hover {
   color: var(--color-text-light);
   font-size: 0.95rem;
   line-height: 1.6;
+  transition: color 0.2s ease;
 }
 
 .skill-list li:hover {
@@ -331,7 +332,7 @@ a:hover {
 }
 
 .timeline-meta {
-  color: var(--color-text-light);
+  color: #374151;
   font-size: 0.875rem;
   margin-bottom: var(--space-sm);
 }
@@ -386,7 +387,7 @@ a:hover {
   position: relative;
   padding-left: 1.5em;
   margin-bottom: var(--space-xs);
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -596,7 +597,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  color: var(--color-text-light);
+  color: var(--color-text);
   transition: color 0.2s;
 }
 
