@@ -4,22 +4,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
   
-  // Handle mobile menu toggle
+  // Handle mobile menu toggle with keyboard support
   if (navToggle) {
-    navToggle.addEventListener('click', () => {
+    // Click handler
+    const toggleMenu = () => {
       navMenu.classList.toggle('active');
       navToggle.setAttribute(
         'aria-expanded',
         navToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
       );
+    };
+
+    navToggle.addEventListener('click', toggleMenu);
+    
+    // Keyboard handler
+    navToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMenu();
+      }
     });
   }
 
-  // Smooth scrolling for anchor links
+  // Smooth scrolling for anchor links with keyboard support
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    const handleNavigation = (e) => {
       e.preventDefault();
-      const targetId = this.getAttribute('href');
+      const targetId = anchor.getAttribute('href');
       
       if (targetId === '#') return;
       
@@ -35,6 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
           behavior: 'smooth',
           block: 'start'
         });
+      }
+    };
+
+    anchor.addEventListener('click', handleNavigation);
+    anchor.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        handleNavigation(e);
       }
     });
   });
