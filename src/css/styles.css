@@ -130,6 +130,23 @@ a:hover {
   color: var(--color-primary);
 }
 
+.nav-toggle {
+  display: none;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: var(--color-text);
+  transition: transform 0.3s ease;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -651,6 +668,26 @@ textarea {
     padding: var(--space-sm) var(--space-md);
     width: 100%;
     text-align: center;
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Animation for hamburger menu */
+    .nav-toggle.active .hamburger-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+  }
+
+  .nav-toggle.active .hamburger-line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
   }
 
   /* Hero Section */
