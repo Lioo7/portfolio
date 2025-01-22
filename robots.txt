@@ -1,0 +1,17 @@
+# Control search engine crawling
+User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /public/images/
+Disallow: /src/
+Disallow: /public/assets/
+
+# Prevent archiving
+User-agent: ia_archiver
+Disallow: /
+
+# Block additional archive bots
+User-agent: archive.org_bot
+Disallow: /
+User-agent: MLBot
+Disallow: /

@@ -1,0 +1,8 @@
+# Security Contacts and Policy
+Contact: mailto:lioz.akirav[at]gmail[.]com
+Contact: https://github.com/Lioo7
+Contact: https://www.linkedin.com/in/lioz-akirav
+Expires: 2026-01-19T00:00:00.000Z
+Preferred-Languages: en, he
+Policy: https://github.com/Lioo7/portfolio/security/policy
+Canonical: https://www.lioz.dev/.well-known/security.txt
