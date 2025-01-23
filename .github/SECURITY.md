@@ -5,7 +5,7 @@
 If you discover a security vulnerability in this project, please follow these steps:
 
 1. **Do Not** create a public GitHub issue
-2. Email me at lioz.akirav[at]gmail[.]com with:
+2. Email me at lioz.akirav@gmail.com with:
    - Description of the vulnerability
    - Steps to reproduce (if possible)
    - Potential impact

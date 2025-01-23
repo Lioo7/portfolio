@@ -193,7 +193,7 @@ a:hover {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: var(--space-3xl);
+  margin-bottom: var(--space-xl);
   color: var(--color-text);
 }
 
@@ -210,9 +210,12 @@ a:hover {
 /* Profile Image Container */
 .profile-image-container {
   position: relative;
-  margin-bottom: var(--space-2xl);
+  margin: 0 auto;
   width: 240px;
   height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Profile Image */
@@ -595,12 +598,18 @@ textarea {
 /* Footer */
 .footer {
   background: var(--color-bg-alt);
-  padding: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
   margin-top: var(--space-3xl);
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-content {
   text-align: center;
+}
+
+.copyright {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
 }
 
 .social-links {
@@ -678,8 +687,8 @@ textarea {
 }
 
     /* Animation for hamburger menu */
-    .nav-toggle.active .hamburger-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
+  .nav-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
   .nav-toggle.active .hamburger-line:nth-child(2) {
@@ -727,12 +736,17 @@ textarea {
     width: 200px;
     height: 200px;
     margin: 0 auto var(--space-xl);
-  }
+}
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
+.footer {
+  padding: var(--space-md) 0;
+  margin-top: var(--space-2xl);
+}
+
+.skills-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
 
   /* Projects Section */
   .projects-grid {
