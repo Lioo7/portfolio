@@ -41,7 +41,7 @@ jobs:
         
     - name: Validate JavaScript
       run: |
-        eslint "src/js/*.js" --no-eslintrc --env browser,es6 --parser-options '{"ecmaVersion": 2020}' || true
+        eslint "src/js/*.js" --env browser,es6 --parser-options '{"ecmaVersion": 2020}' || true
         echo "JavaScript validation completed"
         
     - name: Check for security issues
