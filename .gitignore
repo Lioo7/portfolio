@@ -53,4 +53,14 @@ Temporary Items
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
+# CI/CD Dependencies (not used locally, only in GitHub Actions)
+node_modules/
+package-lock.json
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# Quality reports
+quality-report.md

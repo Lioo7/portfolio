@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website - static HTML/CSS/JS",
+  "private": true,
+  "scripts": {
+    "dev": "python3 dev-server.py",
+    "validate": "echo 'Run validation checks'",
+    "test": "echo 'No tests needed for static site'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lioo7/portfolio.git"
+  },
+  "author": "Lioz Akirav",
+  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "static-site",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

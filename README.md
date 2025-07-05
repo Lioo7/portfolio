@@ -57,6 +57,12 @@ A modern, responsive portfolio website showcasing my professional experience, pr
 - Form spam protection
 - Secure resource loading
 
+### CI/CD Pipeline
+- Automated code validation (HTML, CSS, JS)
+- Security checks for static files
+- Accessibility testing
+- AWS Amplify deployment integration
+
 ## Contact
 
 - Website: [lioz.dev](https://www.lioz.dev)
