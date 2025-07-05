@@ -5,6 +5,15 @@
     "at-rule-no-unknown": [true, {
       "ignoreAtRules": ["supports"]
     }],
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "color-hex-length": null,
+    "value-keyword-case": null,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "color-function-alias-notation": null,
+    "keyframes-name-pattern": null,
+    "rule-empty-line-before": null,
+    "media-feature-range-notation": null,
+    "selector-pseudo-element-colon-notation": null
   }
 } 
