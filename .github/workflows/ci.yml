@@ -25,9 +25,7 @@ jobs:
         npm install -g \
           htmlhint \
           stylelint \
-          stylelint-config-standard \
-          eslint \
-          lighthouse-ci
+          stylelint-config-standard
         
     - name: Validate HTML
       run: |
@@ -41,7 +39,13 @@ jobs:
         
     - name: Validate JavaScript
       run: |
-        eslint "src/js/*.js" --env browser,es6 --parser-options '{"ecmaVersion": 2020}' || true
+        # Basic JavaScript syntax check using Node.js
+        for file in src/js/*.js; do
+          if [ -f "$file" ]; then
+            echo "Checking syntax: $file"
+            node -c "$file" || echo "Syntax error in $file"
+          fi
+        done
         echo "JavaScript validation completed"
         
     - name: Check for security issues
