@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Page Not Found | Lioz Akirav</title>
-    <link rel="stylesheet" href="../../src/css/styles.css">
-    <link rel="icon" href="../../public/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="icon" href="./public/assets/favicon/favicon.ico" type="image/x-icon">
     
     <style>
         .error-page {
@@ -93,6 +93,47 @@
             color: white;
         }
 
+        /* Fallback styles in case CSS variables don't load */
+        .error-page {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        
+        .error-code {
+            color: #4f46e5;
+        }
+        
+        .error-title {
+            color: #1e293b;
+        }
+        
+        .error-message {
+            color: #4B5563;
+        }
+        
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .button-primary {
+            background: #4f46e5;
+            color: white;
+        }
+        
+        .button-primary:hover {
+            background: #4338ca;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
             .error-code {
                 font-size: 6rem;
@@ -126,7 +167,7 @@
             Don't worry, even the best explorers sometimes take a wrong turn.
         </p>
         <div class="error-actions">
-            <a href="../../index.html" class="button button-primary home-link">
+            <a href="./index.html" class="button button-primary home-link">
                 🏠 Return to Homepage
             </a>
             <button onclick="history.back()" class="button button-secondary">
@@ -135,4 +176,4 @@
         </div>
     </main>
 </body>
-</html>
+</html> 
